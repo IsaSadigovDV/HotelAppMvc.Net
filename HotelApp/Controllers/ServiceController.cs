@@ -8,5 +8,10 @@ namespace HotelApp.Controllers
         {
             return View();
         }
+
+        public async Task<IActionResult> Create()
+        {
+            return Json("ok");
+        }
     }
 }
