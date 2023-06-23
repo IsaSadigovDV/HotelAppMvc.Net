@@ -2,7 +2,7 @@
 using HotelApp.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelApp.Service
+namespace HotelApp.Services
 {
     public class SettingService
     {
@@ -15,7 +15,7 @@ namespace HotelApp.Service
 
         public async Task<Setting> Get()
         { 
-            Setting setting = await _context.Settings.FirstOrDefaultAsync();
+            Setting? setting = await _context.Settings.FirstOrDefaultAsync();
             return setting;
         }
 

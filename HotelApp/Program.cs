@@ -1,5 +1,5 @@
 using HotelApp.Context;
-using HotelApp.Service;
+using HotelApp.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
